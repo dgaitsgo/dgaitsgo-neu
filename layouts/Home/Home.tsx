@@ -1,3 +1,5 @@
+import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 function H1({ children }: { children: React.ReactNode }) {
@@ -11,37 +13,149 @@ function H1({ children }: { children: React.ReactNode }) {
 function Home() {
 	return (
 		<div className="subpixel-antialiased">
-			<div className="lg:pt-12 lg:px-12 md:p-4 sm:px-0 h-screen bg-amber-200">
+			<div className="lg:pt-12 lg:px-12 md:p-4 sm:px-0 bg-amber-200 relative">
+				<div className="absolute r-0">
+					<img className="max-h-32" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
+				</div>
 				<div
-					className="border-l-2  border-stone-900 relative"
+					className="border-l-2 border-stone-900 min-h-full"
 				>
-					<div className="">
-						<div className="bg-white border-t-2 border-r-2 inline-block border-stone-900 p-4" style={{ fontFamily: 'Fivo', fontWeight: 'medium' }}>
-							<h1 className="text-6xl">David Gaitsgory</h1>
-						</div>
-						{/* */}
-						<div className="">
-							<p className="py-4 pl-4 border-t-2 border-b-2 border-r-2 border-stone-900 self-center text-2xl  bg-white" style={{ fontFamily: 'Fivo', fontWeight: 'lighter' }}>
+
+					<div className="bg-white border-t-2 border-r-2 inline-block border-stone-900 p-4 font-medium font-fivo">
+						<h1 className="text-6xl">David Gaitsgory</h1>
+					</div>
+					{/* */}
+					<div>
+						<div>
+							<p className="py-4 pl-4 border-t-2 border-r-2 border-stone-900 self-center text-2xl  bg-white font-fivo font-light">
 								Full-stack software developer who gets early start-ups off the ground.
 								From tech strategy to implementation, my goal is to get you from idea to MVP as fast as possible.
-
 							</p>
-							{/* <span className="text-xl">Every delivery is:</span> */}
 
-							{/* <p className="mt-4" style={{ fontFamily: 'Fivo', fontWeight: 'lighter'}}>
+							{/* <div className=" bg-white block">
+									<Image src={'/images/dgaitsgo.png'} layout='fixed' width={300} height={300} alt='David Gaitsgory illustration' />
+								</div> */}
+						</div>
+						<p className=" m-auto text-4xl bg-fuchsia-300 border-r-2 border-stone-900 border-b-2 border-t-2 pt-4 pb-4 text-center font-fivo font-bold">
+							Velocity <span className="italic">and</span> quality
+						</p>
+						{/* <span className="text-xl">Every delivery is:</span> */}
+
+						{/* <p className="mt-4" style={{ fontFamily: 'Fivo', fontWeight: 'lighter'}}>
 							What I deliver is:
 						</p> */}
-						</div>
 					</div>
 				</div>
 				<div>
+					<div className="mt-10 border-r-2 border-l-2 inline-block bg-white border-stone-900">
+						<p className="p-4 border-stone-900 mb-2 border-t-2 ">
+							<span className="underline underline-offset-4">Every</span> delivery is:
+						</p>
+					</div>
+					<div className="grid border-t-2 border-l-2  border-stone-900 grid-cols-4">
+						<div className="border-r-2  border-b-2 border-stone-900 p-4 bg-white">
+							<p className="font-semibold"> ✓ Tested</p>
+							<span>Requirements are translated directly into tests. Full unit and e2e coverage.</span>
+						</div>
+						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white">
+							<p className="font-semibold"> ✓ Performant</p>
+							<span>Pass lighthouse accessibility, speed and SEO metrics with flying colors.</span>
+						</div>
+						<div className="border-r-2  border-b-2 border-stone-900 p-4 bg-white">
+							<p className="font-semibold"> ✓ Scalable</p>
+							<span>Not just code but a product online, with infrastructure ready to scale.</span>
+						</div>
+						<div className="p-4 bg-white border-b-2 border-r-2 border-stone-900">
+							<p className="font-semibold "> ✓ Mobile-first</p>
+							<span>Apps that rock on small screens and slow networks</span>
+						</div>
+						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white ">
+							<p className="font-semibold"> ✓ Secure</p>
+							<span>Security by default.</span>
+						</div>
+						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white ">
+							<p className="font-semibold"> ✓ Observable</p>
+							<span>Security by default.</span>
+						</div>
+					</div>
+					<div className="mt-10 flex">
+						<h2 className="text-right p-4 bg-white border-r-2 border-t-2 border-l-2 border-stone-900">
+							Recent Work
+						</h2>
+					</div>
 				</div>
-				<button className="text-3xl ml-0 text-white p-8 bg-purple-900 border-stone-900 border-b-2 border-x-2">
-					<a href="mailto:hi@dgaitsgo.com">
-						say hi ➛
-					</a>
+			</div>
+			<div className="flex border-t-2 border-b-2 border-stone-900 font-fivo">
+				<div className="w-7/12 bg-lime-200 pl-16 p-6  border-r-2 border-stone-900">
+					<h4 className="text-xl font-bold">Upward Facing Cat</h4>
+					<p className="pt-4 mb-8 h-12">SaaS for dance instructors to collect set-up classes and manage registrations</p>
+					{/* <div className="flex gap-2 mb-4">
+						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">NextJS</span>
+						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">React</span>
+						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">D3</span>
+						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">Stripe</span>
+					</div> */}
+					<a className="underline underline-offset-4">Site →</a>
+				</div>
+				<div className="w-6/12 bg-lime-200 pl-16 p-6">
+					<h4 className="text-xl font-bold">Styleep</h4>
+					<p className="pt-4 mb-8 h-12">SaaS platform matching hair stylists and salons for the perfect fit</p>
+					<a className="underline underline-offset-4">Site →</a>
+				</div>
+			</div>
+			<div className="flex">
+				<p className="m-auto px-4 py-4 text-center text-3xl mt-6 underline underline-offset-8 rounded-lg font-fivo font-bold">What they say:</p>
+			</div>
+			<div className="flex">
+				<div className="self-start max-w-md mx-12 pb-4 border-2 border-stone-900 relative mt-8 shadow-brut-md">
+					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 bg-white border-stone-900"
+						style={{
+							transform: `translate(-50%, -50%)`,
+							left: '0%',
+							display: 'grid',
+							placeContent: 'center'
+						}}
+					>&#8220;</span>
+					<p className="p-4 italic text-stone-700">David was a pleasure to work with. Project was completed on time with great results.</p>
+					<span className="p-4">- Christopher Cabell, Co-Founder and CEO of RxPhoto</span>
+					<div className="grid place-content-center left-full font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2 bg-white border-stone-900 -translate-x-1/2 -translate-y-1/2"
+					>&#8221;</div>
+				</div>
+				<div className="max-w-lg mx-12 pb-4 border-2 border-stone-900 relative mt-8" style={{ boxShadow: '4px 10px' }}>
+					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 bg-white border-stone-900"
+						style={{
+							transform: `translate(-50%, -50%)`,
+							left: '0%',
+							display: 'grid',
+							placeContent: 'center'
+						}}
+					>&#8220;</span>
+					<p className="p-4 italic text-stone-700">David is an extremely talented dev, and an artist when it comes to data
+						ualization. I couldn&apos;t have asked for a better partner in bringing my data to life. You&apos;re in great hands when it comes to professional communications, well-measured milestones, and easily understood goals. 10/10 and I hope to work with him on more projects.</p>
+					<span className="p-4">- Mitch Chaiet, Co-Founder and CEO of Memetic Influence</span>
+					<div className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2 bg-white border-stone-900"
+						style={{
+							transform: `translate(-50%, -50%)`,
+							left: '100%',
+							display: 'grid',
+							placeContent: 'center',
+						}}>&#8221;</div>
+				</div>
+			</div>
+			<div className="border-t-2 border-stone-900 mt-16">
+				<h1 className="text-5xl ml-12 mt-16 font-fivo font-bold">
+					Have a great idea?
+				</h1>
+				<button className="text-3xl ml-12 text-white p-8 mt-8 bg-purple-900 border-stone-900 border-2">
+					Let&apos;s begin ➛
 				</button>
 			</div>
+			<footer className="m-auto bg-amber-200 mt-12 p-12">
+				<p>Made in Brasília</p>
+				<p className="underline underline-offset-4"><a>Feedback</a></p>
+				<p className="pt-1">All rights reserved</p>
+				<Link href={'/blog'} className="">Blog</Link>
+			</footer>
 		</div >
 	)
 }

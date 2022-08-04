@@ -8,7 +8,14 @@ module.exports = {
 	],
 	theme: {
 		screens,
-		extend: {},
+		extend: {
+			fontFamily: {
+				fivo: ['Fivo']
+			},
+			boxShadow: {
+				'brut-md': '4px 10px'
+			}
+		},
 	},
 	plugins: [],
 }
