@@ -14,15 +14,16 @@ function Home() {
 	return (
 		<div className="subpixel-antialiased">
 			<div className="lg:pt-12 lg:px-12 md:p-4 sm:px-0 bg-amber-200 relative">
-				<div className="absolute r-0">
-					<img className="max-h-32" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
-				</div>
+			
 				<div
 					className="border-l-2 border-stone-900 min-h-full"
 				>
 
-					<div className="bg-white border-t-2 border-r-2 inline-block border-stone-900 p-4 font-medium font-fivo">
-						<h1 className="text-6xl">David Gaitsgory</h1>
+					<div className="flex content-start">
+						<div className="bg-white border-t-2 border-r-2 flex items-center border-stone-900 p-4 font-medium font-fivo">
+							<h1 className="text-6xl">David Gaitsgory</h1>
+						</div>
+						<img className="max-h-32 border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
 					</div>
 					{/* */}
 					<div>

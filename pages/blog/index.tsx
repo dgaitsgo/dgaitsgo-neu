@@ -1,8 +1,11 @@
+import Link from "next/link"
+
 const articles = [
 	{
 		title: 'Reacreate that graph: Water Quality',
 		sum: "What can we find out about the areas with the most water quality violations? I go through the steps to collect, refind and visualize the data to answer that quesiton.",
-		tags: ["D3", 'Data Viz', 'python', 'scraping']
+		tags: ["D3", 'Data Viz', 'python', 'scraping'],
+		link: "rctg1"
 	}
 ]
 
@@ -27,9 +30,9 @@ function Blog() {
 									{
 
 									}
-									<a>
-										<p className="bg-lime-200 border-b-2 border-r-2 inline-block border-stone-900 p-4"><span className="underline underline-offset-4">Read More</span>&nbsp;→</p>
-									</a>
+									<Link href={`/blog/${article.link}`}>
+										<a className="bg-lime-200 border-b-2 border-r-2 inline-block border-stone-900 p-4"><span className="underline underline-offset-4">Read More</span>&nbsp;→</a>
+									</Link>
 								</div>
 							)
 						})
