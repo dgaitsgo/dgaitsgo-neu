@@ -23,7 +23,7 @@ function Home() {
 						<div className="">
 							<p className="py-4 pl-4 border-t-2 border-b-2 border-r-2 border-stone-900 self-center text-2xl  bg-white" style={{ fontFamily: 'Fivo', fontWeight: 'lighter' }}>
 								Full-stack software developer who gets early start-ups off the ground.
-								From tech strategy to implementation, my goal is to go from idea to MVP as fast as possible.
+								From tech strategy to implementation, my goal is to get you from idea to MVP as fast as possible.
 
 							</p>
 							{/* <span className="text-xl">Every delivery is:</span> */}
