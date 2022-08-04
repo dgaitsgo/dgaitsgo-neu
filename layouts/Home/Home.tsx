@@ -2,7 +2,7 @@ import React from "react"
 
 function H1({ children }: { children: React.ReactNode }) {
 	return (
-		<h1 className="subpixel-antialiased text-3xl">
+		<h1 className="">
 			{children}
 		</h1>
 	)
@@ -10,23 +10,23 @@ function H1({ children }: { children: React.ReactNode }) {
 
 function Home() {
 	return (
-		<div>
+		<div className="subpixel-antialiased">
 			<div className="pl-12 pt-12 pr-12 bg-amber-200">
 				<div
-					className="border-l-2 border-r-2 border-t-2 border-stone-900 min-h-full relative bg-white"
+					className="border-l-2  border-stone-900 min-h-full relative"
 				>
-					<div className="mt-4">
-						<div className="bg-white border-b-2 border-stone-900 p-4" style={{ fontFamily: 'Fivo', fontWeight: 'medium' }}>
-							<H1>David Gaitsgory</H1>
+					<div className="">
+						<div className="bg-white border-t-2 border-r-2 inline-block border-stone-900 p-4" style={{ fontFamily: 'Fivo', fontWeight: 'medium' }}>
+							<h1 className="text-6xl">David Gaitsgory</h1>
 						</div>
 						{/* */}
 						<div className="">
-							<p className="mt-4 ml-4 w-2/4 self-center text-2xl" style={{ fontFamily: 'Fivo', fontWeight: 'lighter' }}>
+							<p className="pt-4 pl-4 border-t-2 border-r-2 border-stone-900 self-center text-2xl  bg-white" style={{ fontFamily: 'Fivo', fontWeight: 'lighter' }}>
 								Full-stack software developer who gets early start-ups off the ground.
 								From tech strategy to implementation, my goal is to get you from idea to MVP as fast as possible.
 
 							</p>
-							<p className="mt-4 m-auto text-4xl bg-fuchsia-300 border-stone-900 border-b-2 border-t-2 pt-4 pb-4 text-center" style={{ fontFamily: 'Fivo', fontWeight: 'bold' }}>
+							<p className=" m-auto text-4xl bg-fuchsia-300 border-r-2 border-stone-900 border-b-2 border-t-2 pt-4 pb-4 text-center" style={{ fontFamily: 'Fivo', fontWeight: 'bold' }}>
 								Velocity <span className="italic">and</span> quality
 							</p>
 							{/* <span className="text-xl">Every delivery is:</span> */}
@@ -38,37 +38,45 @@ function Home() {
 					</div>
 				</div>
 				<div>
-					<div className="border-r-2 border-l-2 inline-block bg-white border-stone-900">
-						<p className="p-4 mt-2 mb-2">
+					<div className="mt-10 border-r-2 border-l-2 inline-block bg-white border-stone-900">
+						<p className="p-4 border-stone-900 mb-2 border-t-2 ">
 							<span className="underline underline-offset-4">Every</span> delivery is:
 						</p>
 					</div>
-					<div className="flex border-b-2 border-t-2 border-l-2 border-r-2 border-stone-900">
-						<div className="border-r-2 border-stone-900 p-4 bg-white">
+					<div className="grid border-t-2 border-l-2  border-stone-900 grid-cols-4">
+						<div className="border-r-2  border-b-2 border-stone-900 p-4 bg-white">
 							<p className="font-semibold"> ✓ Tested</p>
 							<span>Requirements are translated directly into tests. Full unit and e2e coverage.</span>
 						</div>
-						<div className="border-r-2 border-stone-900 p-4 bg-white">
+						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white">
 							<p className="font-semibold"> ✓ Performant</p>
 							<span>Pass lighthouse accessibility, speed and SEO metrics with flying colors.</span>
 						</div>
-						<div className="border-r-2 border-stone-900 p-4 bg-white">
+						<div className="border-r-2  border-b-2 border-stone-900 p-4 bg-white">
 							<p className="font-semibold"> ✓ Scalable</p>
 							<span>Not just code but a product online, with infrastructure ready to scale.</span>
 						</div>
-						<div className="p-4 bg-white">
+						<div className="p-4 bg-white border-b-2 border-r-2 border-stone-900">
 							<p className="font-semibold "> ✓ Mobile-first</p>
 							<span>Apps that rock on small screens and slow networks</span>
 						</div>
+						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white ">
+							<p className="font-semibold"> ✓ Secure</p>
+							<span>Security by default.</span>
+						</div>
+						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white ">
+							<p className="font-semibold"> ✓ Observable</p>
+							<span>Security by default.</span>
+						</div>
 					</div>
-					<div className="flex place-content-end">
-						<h2 className="text-right p-4 bg-white border-r-2 border-l-2 border-stone-900">
+					<div className="mt-10 flex">
+						<h2 className="text-right p-4 bg-white border-r-2 border-t-2 border-l-2 border-stone-900">
 							Recent Work
 						</h2>
 					</div>
 				</div>
 			</div>
-			<div className="flex border-t-2 border-stone-900" style={{ fontFamily: 'Fivo' }}>
+			<div className="flex border-t-2 border-b-2 border-stone-900" style={{ fontFamily: 'Fivo' }}>
 				<div className="w-7/12 bg-lime-200 pl-16 p-6  border-r-2 border-stone-900">
 					<h4 className="text-xl font-bold">Upward Facing Cat</h4>
 					<p className="pt-4 mb-8 h-12">SaaS for dance instructors to collect set-up classes and manage registrations</p>
@@ -78,12 +86,12 @@ function Home() {
 						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">D3</span>
 						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">Stripe</span>
 					</div> */}
-					<a className="underline underline-offset-4">Learn More →</a>
+					<a className="underline underline-offset-4">Case study →</a>
 				</div>
 				<div className="w-6/12 bg-lime-200 pl-16 p-6">
 					<h4 className="text-xl font-bold">Styleep</h4>
 					<p className="pt-4 mb-8 h-12">SaaS platform matching hair stylists and salons for the perfect fit</p>
-					<a className="underline underline-offset-4">Learn More →</a>
+					<a className="underline underline-offset-4">Case study →</a>
 				</div>
 			</div>
 			<div className="flex">
@@ -133,14 +141,14 @@ function Home() {
 				<h1 className="text-5xl ml-12 mt-16" style={{ fontFamily: 'Fivo', fontWeight: 'bold' }}>
 					Have a great idea?
 				</h1>
-				<button className="text-3xl ml-12 text-white p-8 bg-stone-900 mt-4">
+				<button className="text-3xl ml-12 text-white p-8 mt-8 bg-purple-900 border-stone-900 border-2">
 					Let&apos;s begin ➛
 				</button>
 			</div>
 			<footer className="m-auto bg-amber-200 mt-12 p-12" style={{ fontFamily: 'Fivo' }}>
 				<p>Made in Brasília</p>
-				<p>Feedback</p>
-				<p>All rights reserved</p>
+				<p className="underline underline-offset-4"><a>Feedback</a></p>
+				<p className="pt-1">All rights reserved</p>
 			</footer>
 		</div >
 	)
