@@ -12,11 +12,11 @@ function H1({ children }: { children: React.ReactNode }) {
 
 function Home() {
 	return (
-		<div className="subpixel-antialiased">
-			<div className="lg:pt-12 lg:px-12 md:p-4 sm:px-0 bg-amber-200 relative">
-			
+		<div className="subpixel-antialiased text-black bg-white">
+			<div className="lg:pt-12 lg:px-12  sm:px-0 bg-amber-200 relative">
+
 				<div
-					className="border-l-2 border-stone-900 min-h-full"
+					className="border-l-2 border-stone-900 min-h-ful"
 				>
 
 					<div className="flex content-start">
@@ -72,44 +72,47 @@ function Home() {
 						</div>
 						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white ">
 							<p className="font-semibold"> ✓ Secure</p>
-							<span>Security by default.</span>
+							<span>Leveraging best practices and risk assessment so security is the default.</span>
 						</div>
 						<div className="border-r-2 border-b-2 border-stone-900 p-4 bg-white ">
 							<p className="font-semibold"> ✓ Observable</p>
-							<span>Security by default.</span>
+							<span>Know your app is working and who is using it.</span>
 						</div>
 					</div>
-					<div className="mt-10 flex">
-						<h2 className="text-right p-4 bg-white border-r-2 border-t-2 border-l-2 border-stone-900">
-							Recent Work
-						</h2>
-					</div>
+				</div>
+				<div className="mt-10 flex">
+					<h2 className="text-right p-4 bg-white border-r-2 border-t-2 border-l-2 border-stone-900">
+						Recent Work :
+					</h2>
 				</div>
 			</div>
 			<div className="flex border-t-2 border-b-2 border-stone-900 font-fivo">
-				<div className="w-7/12 bg-lime-200 pl-16 p-6  border-r-2 border-stone-900">
+				<div className="w-7/12 bg-lime-200 pl-16 p-6 border-r-2 border-stone-900">
 					<h4 className="text-xl font-bold">Upward Facing Cat</h4>
+					<div className="flex gap-2 mb-2 mt-2">
+						<span className="bg-stone-900 text-white py-1 px-2 rounded-full">Principle Architect</span>
+					</div>
 					<p className="pt-4 mb-8 h-12">SaaS for dance instructors to collect set-up classes and manage registrations</p>
-					{/* <div className="flex gap-2 mb-4">
-						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">NextJS</span>
-						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">React</span>
-						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">D3</span>
-						<span className="bg-stone-900 text-white py-2 px-3 rounded-full">Stripe</span>
-					</div> */}
-					<a className="underline underline-offset-4">Site →</a>
+					<a className="underline underline-offset-4" href="https://ufc.dance/">Site →</a>
 				</div>
 				<div className="w-6/12 bg-lime-200 pl-16 p-6">
 					<h4 className="text-xl font-bold">Styleep</h4>
-					<p className="pt-4 mb-8 h-12">SaaS platform matching hair stylists and salons for the perfect fit</p>
-					<a className="underline underline-offset-4">Site →</a>
+					<div className="flex gap-2 mb-2 mt-2">
+						<span className="bg-stone-900 text-white py-1 px-2 rounded-full">Lead Dev</span>
+					</div>
+					<p className="pt-4 mb-2 h-12">SaaS platform matching hair stylists and salons for the perfect fit</p>
+					<div className="flex gap-2 mb-4">
+						{/* <span className="bg-stone-900 text-white"></span> */}
+					</div>
+					<a className="underline underline-offset-4" href="https://styleep.com">Site →</a>
 				</div>
 			</div>
-			<div className="flex">
+			<div className="flex bg-white">
 				<p className="m-auto px-4 py-4 text-center text-3xl mt-6 underline underline-offset-8 rounded-lg font-fivo font-bold">What they say:</p>
 			</div>
-			<div className="flex">
-				<div className="self-start max-w-md mx-12 pb-4 border-2 border-stone-900 relative mt-8 shadow-brut-md">
-					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 bg-white border-stone-900"
+			<div className="flex bg-white">
+				<div className="self-start max-w-md mx-12 pb-4 border-2 border-stone-900 relative mt-8 shadow-brut-md ">
+					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 bg-amber-200 border-stone-900" 
 						style={{
 							transform: `translate(-50%, -50%)`,
 							left: '0%',
@@ -119,11 +122,11 @@ function Home() {
 					>&#8220;</span>
 					<p className="p-4 italic text-stone-700">David was a pleasure to work with. Project was completed on time with great results.</p>
 					<span className="p-4">- Christopher Cabell, Co-Founder and CEO of RxPhoto</span>
-					<div className="grid place-content-center left-full font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2 bg-white border-stone-900 -translate-x-1/2 -translate-y-1/2"
+					<div className="grid place-content-center left-full font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2 bg-amber-200 border-stone-900 -translate-x-1/2 -translate-y-1/2"
 					>&#8221;</div>
 				</div>
 				<div className="max-w-lg mx-12 pb-4 border-2 border-stone-900 relative mt-8" style={{ boxShadow: '4px 10px' }}>
-					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 bg-white border-stone-900"
+					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 bg-amber-200 border-stone-900"
 						style={{
 							transform: `translate(-50%, -50%)`,
 							left: '0%',
@@ -132,9 +135,9 @@ function Home() {
 						}}
 					>&#8220;</span>
 					<p className="p-4 italic text-stone-700">David is an extremely talented dev, and an artist when it comes to data
-						ualization. I couldn&apos;t have asked for a better partner in bringing my data to life. You&apos;re in great hands when it comes to professional communications, well-measured milestones, and easily understood goals. 10/10 and I hope to work with him on more projects.</p>
+						visualization. I couldn&apos;t have asked for a better partner in bringing my data to life. You&apos;re in great hands when it comes to professional communications, well-measured milestones, and easily understood goals. 10/10 and I hope to work with him on more projects.</p>
 					<span className="p-4">- Mitch Chaiet, Co-Founder and CEO of Memetic Influence</span>
-					<div className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2 bg-white border-stone-900"
+					<div className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2 bg-amber-200 border-stone-900"
 						style={{
 							transform: `translate(-50%, -50%)`,
 							left: '100%',
@@ -143,19 +146,19 @@ function Home() {
 						}}>&#8221;</div>
 				</div>
 			</div>
-			<div className="border-t-2 border-stone-900 mt-16">
-				<h1 className="text-5xl ml-12 mt-16 font-fivo font-bold">
+			<div className="bg-white border-t-2 border-stone-900 mt-16">
+				<h1 className="bg-white text-5xl ml-12 mt-16 font-fivo font-bold">
 					Have a great idea?
 				</h1>
 				<button className="text-3xl ml-12 text-white p-8 mt-8 bg-purple-900 border-stone-900 border-2">
 					Let&apos;s begin ➛
 				</button>
 			</div>
-			<footer className="m-auto bg-amber-200 mt-12 p-12">
+			<footer className="m-auto bg-stone-900 mt-12 p-12 border-t-2 text-white">
 				<p>Made in Brasília</p>
-				<p className="underline underline-offset-4"><a>Feedback</a></p>
+				{/* <p className="underline underline-offset-4"><a>Feedback</a></p> */}
 				<p className="pt-1">All rights reserved</p>
-				<Link href={'/blog'} className="">Blog</Link>
+				{/* <Link href={'/blog'} className="">Blog</Link> */}
 			</footer>
 		</div >
 	)
