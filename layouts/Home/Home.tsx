@@ -8,7 +8,7 @@ const Header = () =>
 		<div className="bg-white border-t-2 border-r-2 flex items-center border-stone-900 p-4 font-medium font-fivo">
 			<h1 className="text-6xl">David Gaitsgory</h1>
 		</div>
-		<img className="lg:max-h-32 md:max-h-32 border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
+		<img className="lg:max-h-32 md:max-h-32  border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
 	</div>
 
 const Description = () =>
@@ -160,7 +160,7 @@ const CTA = () =>
 	</div>
 
 const Footer = () =>
-	<footer className="m-auto bg-stone-900 mt-12 p-12 border-t-2 text-white">
+	<footer className="m-auto bg-stone-900 mt-12 lg:p-12 p-4 border-t-2 text-white">
 		<p>Made in Brasília</p>
 		{/* <p className="underline underline-offset-4"><a>Feedback</a></p> */}
 		<p className="pt-1">All rights reserved</p>
