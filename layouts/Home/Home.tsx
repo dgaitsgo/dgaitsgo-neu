@@ -4,11 +4,11 @@ import Link from "next/link"
 import React from "react"
 
 const Header = () =>
-	<div className="flex content-start">
+	<div className="lg:flex lg:content-start md:flex md:content-start">
 		<div className="bg-white border-t-2 border-r-2 flex items-center border-stone-900 p-4 font-medium font-fivo">
 			<h1 className="text-6xl">David Gaitsgory</h1>
 		</div>
-		{/* <img className="lg:max-h-32 border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' /> */}
+		<img className="lg:max-h-32 md:max-h-32 border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
 	</div>
 
 const Description = () =>
@@ -109,7 +109,7 @@ const Testimonials = () =>
 			<div className="
 				p-4	
 				lg:self-start
-				max-w-lg mx-12 border-2 border-stone-900 relative mt-8 shadow-brut-md
+				max-w-lg lg:mx-12 mx-6 border-2 border-stone-900 relative mt-8 shadow-brut-md
 			">
 				<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2 border-stone-900 bg-white"
 					style={{
@@ -124,7 +124,7 @@ const Testimonials = () =>
 				<div className="grid place-content-center left-full font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2  border-stone-900 -translate-x-1/2 -translate-y-1/2 bg-white"
 				>&#8221;</div>
 			</div>
-			<div className="max-w-lg mx-12 pb-4 border-2 border-stone-900 relative mt-8 p-4 shadow-brut-md">
+			<div className="max-w-lg lg:mx-12 mx-6 pb-4 border-2 border-stone-900 relative mt-8 p-4 shadow-brut-md">
 				<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2  border-stone-900 bg-white"
 					style={{
 						transform: `translate(-50%, -50%)`,
@@ -149,11 +149,11 @@ const Testimonials = () =>
 
 const CTA = () =>
 	<div className="bg-white border-t-2 border-stone-900 mt-16">
-		<h1 className="bg-white text-5xl ml-12 mt-16 font-fivo font-bold">
+		<h1 className="bg-white text-5xl lg:ml-12 mx-4 mt-16 font-fivo font-bold">
 			Have a great idea?
 		</h1>
 		<a href="mailto:hi@dgaitsgo.com">
-			<button className="text-3xl ml-12 text-white p-8 mt-8 bg-purple-900 border-stone-900 border-2">
+			<button className="text-3xl lg:ml-12 ml-4 text-white p-8 mt-8 bg-purple-900 border-stone-900 border-2">
 				Let&apos;s begin ➛
 			</button>
 		</a>
