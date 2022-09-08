@@ -14,7 +14,7 @@ const Header = () =>
 const Description = () =>
 	<div>
 		<div>
-			<p className="py-4 pl-4 border-t-2 border-r-2 border-stone-900 self-center text-2xl  bg-white font-fivo font-light">
+			<p className="py-4 pl-4 border-t-2 border-r-2 border-b-2 border-stone-900 self-center text-2xl  bg-white font-fivo font-light">
 				Full-stack software developer who gets early start-ups off the ground.
 				From tech strategy to implementation, my goal is to get you from idea to MVP as fast as possible.
 			</p>
@@ -23,9 +23,9 @@ const Description = () =>
 									<Image src={'/images/dgaitsgo.png'} layout='fixed' width={300} height={300} alt='David Gaitsgory illustration' />
 								</div> */}
 		</div>
-		<p className="m-auto text-4xl md:border-r-2 lg:border-r-2 border-stone-900 border-b-2 border-t-2 pt-4 pb-4 text-center font-fivo font-bold">
+		{/* <p className="m-auto text-4xl md:border-r-2 lg:border-r-2 border-stone-900 border-b-2 border-t-2 pt-4 pb-4 text-center font-fivo font-bold">
 			Velocity <span className="italic">and</span> quality
-		</p>
+		</p> */}
 		{/* <span className="text-xl">Every delivery is:</span> */}
 
 		{/* <p className="mt-4" style={{ fontFamily: 'Fivo', fontWeight: 'lighter'}}>
@@ -161,9 +161,9 @@ const CTA = () =>
 
 const Footer = () =>
 	<footer className="m-auto bg-stone-900 mt-12 lg:p-12 p-4 border-t-2 text-white">
-		<p>Made in Brasília</p>
+		{/* <p>Made in Brasília</p> */}
 		{/* <p className="underline underline-offset-4"><a>Feedback</a></p> */}
-		<p className="pt-1">All rights reserved</p>
+		{/* <p className="pt-1">All rights reserved</p> */}
 		<p className="mt-2 underline underline-offset-4"><a href="https://github.com/dgaitsgo"> 🔗 github</a></p>
 		{/* <Link href={'/blog'} className="">Blog</Link> */}
 	</footer>
@@ -179,7 +179,7 @@ function Home() {
 						<Header />
 						<Description />
 					</div>
-					<SLAs />
+					{/* <SLAs /> */}
 
 				</div>
 				<RecentWork />
