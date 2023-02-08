@@ -79,7 +79,7 @@ const RecentWork = () =>
 			<div className="lg:w-6/12 pl-4 lg:pl-16 p-6 border-r-2 border-stone-900 border-b-2 lg:border-b-0">
 				<h4 className="text-xl">Upward Facing Cat</h4>
 				<div className="flex gap-2 mb-2">
-					<span className="font-bold">Principle Architect</span>
+					<span className="font-bold">Lead Dev</span>
 				</div>
 				<p className="pt-4 mb-2 lg:h-12">SaaS for dance instructors to manage classes</p>
 				<div className="flex gap-2 mb-4">
@@ -147,6 +147,46 @@ const Testimonials = () =>
 		</div>
 	</>
 
+const SatisfiedCustomers = () =>
+	<>
+		<div className="flex bg-white mt-16 border-b-2 border-stone-900">
+			<div className="text-center p-4 ml-12 bg-white border-l-2 border-r-2 border-t-2 border-stone-900">
+				Other Satisfied Customers :
+			</div>
+		</div>
+		<div className="grid grid-cols-2">
+			<div className="p-4 ml-12">
+				<img className="max-w-24 max-h-24" src={'/images/company-logos/hg.svg'} alt='Health Gorilla Logo' />
+				<p>Health Gorilla</p>
+				<div>
+					<span>#Data-Viz</span>
+					<span>#Web-App</span>
+				</div>
+			</div>
+			<div className="p-4 ml-12">
+				<img className="max-w-24 max-h-24" src={'/images/company-logos/pioneer.png'} alt='Pioneer logo' />
+				<p>Pioneer</p>
+				<div>
+					<span>#Web-App</span>
+				</div>
+			</div>
+			<div className="p-4 ml-12">
+				<img className="max-w-24 max-h-24" src={'/images/company-logos/public-health-post.jpeg'} alt='Public Health Post Logo' />
+				<p>Public Health Post</p>
+				<div>
+					<span>#Data-Viz</span>
+				</div>
+			</div>
+			<div className="p-4 ml-12">
+				<img className="max-w-24 max-h-24" src={'/images/company-logos/wisight.png'} alt='WiSight Logo' />
+				<p>WiSight</p>
+				<div>
+					<span>#Mobile-App</span>
+				</div>
+			</div>
+		</div>
+	</>
+
 const CTA = () =>
 	<div className="bg-white border-t-2 border-stone-900 mt-16">
 		<h1 className="bg-white text-5xl lg:ml-12 mx-4 mt-16 font-fivo font-bold">
@@ -184,9 +224,9 @@ function Home() {
 				</div>
 				<RecentWork />
 				<Testimonials />
-
+				<SatisfiedCustomers />
 				<CTA />
-			<Footer /> 
+				<Footer />
 			</div >
 		</>
 	)
