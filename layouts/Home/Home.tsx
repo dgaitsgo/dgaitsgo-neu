@@ -154,41 +154,37 @@ const SatisfiedCustomers = () =>
 				Other Satisfied Customers :
 			</div>
 		</div>
-		<div className="grid grid-cols-2">
-			<div className="p-4 ml-12">
-				<img className="max-w-24 max-h-24" src={'/images/company-logos/hg.svg'} alt='Health Gorilla Logo' />
-				<p>Health Gorilla</p>
-				<div>
-					<span>#Data-Viz</span>
-					<span>#Web-App</span>
+		<div className="flex justify-evenly items-center p-12 flex-wrap gap-4">
+			<a href="https://www.healthgorilla.com/" target="_blank" rel="noreferrer">
+				<div className="flex items-center gap-4">
+					<img className="grayscale w-10 max-h-24" src={'/images/company-logos/hg.svg'} alt='Health Gorilla Logo' />
+					<p>Health Gorilla</p>
 				</div>
-			</div>
-			<div className="p-4 ml-12">
-				<img className="max-w-24 max-h-24" src={'/images/company-logos/pioneer.png'} alt='Pioneer logo' />
-				<p>Pioneer</p>
-				<div>
-					<span>#Web-App</span>
+			</a>
+			<a href="https://pioneer.buzz/" target="_blank" rel="noreferrer">
+				<div className="flex items-center gap-4">
+					<img className="grayscale w-10 max-h-24" src={'/images/company-logos/pioneer.png'} alt='Pioneer logo' />
+					<h4 className="text-xl font-lighter">Pioneer</h4>
 				</div>
-			</div>
-			<div className="p-4 ml-12">
-				<img className="max-w-24 max-h-24" src={'/images/company-logos/public-health-post.jpeg'} alt='Public Health Post Logo' />
-				<p>Public Health Post</p>
-				<div>
-					<span>#Data-Viz</span>
+			</a>
+			<a href="https://www.di-rupt.com/accueil/" target="_blank" rel="noreferrer">
+				<div className="flex items-center gap-4">
+					<img className="grayscale w-10 max-h-24" src={'/images/company-logos/wisight.png'} alt='WiSight Logo' />
+					<h4 className="text-xl font-lighter">WiSight</h4>
 				</div>
-			</div>
-			<div className="p-4 ml-12">
-				<img className="max-w-24 max-h-24" src={'/images/company-logos/wisight.png'} alt='WiSight Logo' />
-				<p>WiSight</p>
-				<div>
-					<span>#Mobile-App</span>
+			</a>
+			<a href="https://www.publichealthpost.org/" target="_blank" rel="noreferrer">
+				<div className="flex items-center gap-4">
+					<img className="grayscale w-10 max-h-24" src={'/images/company-logos/public-health-post.jpeg'} alt='Public Health Post Logo' />
+					<h4 className="text-xl font-lighter">Public Health Post</h4>
 				</div>
-			</div>
+			</a>
+
 		</div>
 	</>
 
 const CTA = () =>
-	<div className="bg-white border-t-2 border-stone-900 mt-16">
+	<div className="bg-white border-t-2 border-stone-900">
 		<h1 className="bg-white text-5xl lg:ml-12 mx-4 mt-16 font-fivo font-bold">
 			Have a great idea?
 		</h1>
