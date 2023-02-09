@@ -1,7 +1,5 @@
-import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
 import React from "react"
+import useTranslation from 'next-translate/useTranslation'
 
 const Header = () =>
 	<div className="lg:flex lg:content-start md:flex md:content-start">
@@ -11,27 +9,20 @@ const Header = () =>
 		<img className="lg:max-h-32 md:max-h-32  border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
 	</div>
 
-const Description = () =>
-	<div>
+const Description = () => {
+
+	const { t } = useTranslation('common')
+
+	console.log(t)
+
+	return <div>
 		<div>
 			<p className="py-4 pl-4 border-t-2 border-r-2 border-b-2 border-stone-900 self-center text-2xl  bg-white font-fivo font-light">
-				Full-stack software developer who gets early start-ups off the ground.
-				From tech strategy to implementation, my goal is to get you from idea to MVP as fast as possible.
+				{t('description')}
 			</p>
-
-			{/* <div className=" bg-white block">
-									<Image src={'/images/dgaitsgo.png'} layout='fixed' width={300} height={300} alt='David Gaitsgory illustration' />
-								</div> */}
 		</div>
-		{/* <p className="m-auto text-4xl md:border-r-2 lg:border-r-2 border-stone-900 border-b-2 border-t-2 pt-4 pb-4 text-center font-fivo font-bold">
-			Velocity <span className="italic">and</span> quality
-		</p> */}
-		{/* <span className="text-xl">Every delivery is:</span> */}
-
-		{/* <p className="mt-4" style={{ fontFamily: 'Fivo', fontWeight: 'lighter'}}>
-							What I deliver is:
-						</p> */}
 	</div>
+}
 
 const SLAs = () =>
 	<div>
