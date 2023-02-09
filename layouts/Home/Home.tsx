@@ -1,5 +1,4 @@
 import React from "react"
-import useTranslation from 'next-translate/useTranslation'
 
 const Header = () =>
 	<div className="lg:flex lg:content-start md:flex md:content-start">
