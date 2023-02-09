@@ -9,20 +9,14 @@ const Header = () =>
 		<img className="lg:max-h-32 md:max-h-32  border-t-2 border-r-2 border-stone-900 bg-cyan-200" src={'/images/dgaitsgo.png'} alt='David Gaitsgory illustration' />
 	</div>
 
-const Description = () => {
-
-	const { t } = useTranslation('common')
-
-	console.log(t)
-
-	return <div>
+const Description = () =>
+	<div>
 		<div>
 			<p className="py-4 pl-4 border-t-2 border-r-2 border-b-2 border-stone-900 self-center text-2xl  bg-white font-fivo font-light">
-				{t('description')}
+				Full-stack software developer who gets early start-ups off the ground. From tech strategy to implementation, my goal is to get you from idea to MVP as fast as possible.
 			</p>
 		</div>
 	</div>
-}
 
 const SLAs = () =>
 	<div>
