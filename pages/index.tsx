@@ -1,10 +1,19 @@
 import React from "react"
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 
 function Home() {
 
+	const router = useRouter()
+	const changeTo = router.locale === 'en' ? 'fr' : 'en'
 	const { t } = useTranslation('common')
+
+	const onToggleLanguageClick = (newLocale: string) => {
+		const { pathname, asPath, query } = router
+		router.push({ pathname, query }, asPath, { locale: newLocale })
+	}
 
 	const Header = () =>
 
@@ -192,11 +201,22 @@ function Home() {
 		</div>
 
 	const Footer = () =>
-		<footer className="m-auto bg-stone-900 mt-12 lg:p-12 p-4 border-t-2 text-white">
+		<footer className="m-auto bg-stone-900 mt-12 lg:p-12 p-4 border-t-2 text-white flex gap-4">
 			{/* <p>Made in Brasília</p> */}
 			{/* <p className="underline underline-offset-4"><a>Feedback</a></p> */}
 			{/* <p className="pt-1">All rights reserved</p> */}
 			<p className="mt-2 underline underline-offset-4"><a href="https://github.com/dgaitsgo"> 🔗 github</a></p>
+			<p className="mt-2 4">•</p>
+			{/* <Link href="/" locale={changeTo}> */}
+			{/* <button>{t('change-locale', { changeTo })}</button> */}
+			{/* </Link> */}
+			<p className="mt-2">{t('available')}
+				<span className="underline underline-offset-4">
+					<Link href="/" locale={changeTo}>
+						{t('in_lang')}
+					</Link>
+				</span>
+			</p>
 			{/* <Link href={'/blog'} className="">Blog</Link> */}
 		</footer>
 
