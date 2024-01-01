@@ -202,22 +202,28 @@ function Home() {
 
 	const Footer = () =>
 		<footer className="m-auto bg-stone-900 mt-12 lg:p-12 p-4 border-t-2 text-white flex gap-4">
+			<div className="mt-2 flex gap-4">
+				<p className="underline underline-offset-4"><a href="https://github.com/dgaitsgo"> 🔗 github</a></p>
+				<p>•</p>
+				<p>{t('available')}
+					<span className="underline underline-offset-4">
+						<Link href="/" locale={changeTo}>
+							{t('in_lang')}
+						</Link>
+					</span>
+				</p>
+				<p>•</p>
+				<p className="underline underline-offset-4">
+					<Link href={'/blog'}>blog</Link>
+				</p>
+			</div>
 			{/* <p>Made in Brasília</p> */}
 			{/* <p className="underline underline-offset-4"><a>Feedback</a></p> */}
 			{/* <p className="pt-1">All rights reserved</p> */}
-			<p className="mt-2 underline underline-offset-4"><a href="https://github.com/dgaitsgo"> 🔗 github</a></p>
-			<p className="mt-2 4">•</p>
+
 			{/* <Link href="/" locale={changeTo}> */}
 			{/* <button>{t('change-locale', { changeTo })}</button> */}
 			{/* </Link> */}
-			<p className="mt-2">{t('available')}
-				<span className="underline underline-offset-4">
-					<Link href="/" locale={changeTo}>
-						{t('in_lang')}
-					</Link>
-				</span>
-			</p>
-			{/* <Link href={'/blog'} className="">Blog</Link> */}
 		</footer>
 
 

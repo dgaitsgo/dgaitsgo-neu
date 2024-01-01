@@ -49,3 +49,7 @@ a {
 		background: black;
 	}
 }
+
+pre {
+	overflow: scroll;
+}

@@ -1,13 +1,3 @@
-Nov 30, 2018
-
-·7 min read
-
-Recreate That Graph
-===================
-
-Water Quality Violations
-------------------------
-
 **Introduction**
 ================
 
