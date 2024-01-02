@@ -4,7 +4,7 @@ import articles from 'constants/articles'
 const Footer = () =>
 	<footer className="m-auto bg-stone-900 lg:p-12 p-4 border-t-2 text-white flex gap-4">
 		<div className="mt-2 flex gap-4">
-			<p className="underline underline-offset-4"><a href="/">Home</a></p>
+			<p className="underline underline-offset-4"><Link href="/">Home</Link></p>
 		</div>
 	</footer>
 
