@@ -2,8 +2,6 @@ import { appWithTranslation } from 'next-i18next'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
-// Prêt pour le décollage ?
-
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
@@ -12,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
 			<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
 			<link rel="manifest" href="/images/site.webmanifest" />
-			<title>Ready for liftoff? 🚀</title>
+			<title></title>
 			<Component {...pageProps} />
 		</>
 	)
