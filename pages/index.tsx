@@ -97,7 +97,7 @@ function Home() {
 					</div>
 					<p className="pt-4 mb-2 lg:h-12">{t('recent_work.styleep')}</p>
 					<div className="flex gap-2 mb-4">
-						<a className="underline underline-offset-4" href="https://styleep.com">Site →</a>
+						<a className="underline underline-offset-4" href="https://www.styleep.com">Site →</a>
 					</div>
 				</div>
 			</div>
