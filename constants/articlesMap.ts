@@ -1,7 +1,7 @@
 export default new Map([
     ['tiles-in-bbox-open-closed', {
         id: 'tiles-in-bbox-open-closed',
-        title: "Why I Won't Fix My 'Illegal' JavaScript",
+        title: "Why I Won't Fix My Bizarre JavaScript",
         sum: 'Reflecting on Object-Oriented Programming (OOP) principles during a recent interview, I question the practicality of the "O" in SOLID',
         tags: ["SOLID", "open source", "GIS", "Design-principles", "JS"],
         date: 'December 27, 2023',

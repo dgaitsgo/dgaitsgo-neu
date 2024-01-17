@@ -1,4 +1,4 @@
-5 years ago, I released a node package that you have to import in the most non-idiomatic way possible. It’s illegal JavaScript. But now that I know better, should I change it? Here’s why I haven’t updated it:
+5 years ago, I released a node package that you have to import in the most non-idiomatic way possible. It’s wonky JavaScript. But now that I know better, should I change it? Here’s why I haven’t updated it:
 
 During my last round of interviews, one particular screener told me to be prepared for a lot of Object Orientated questions.
 
