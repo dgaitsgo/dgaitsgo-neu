@@ -15,11 +15,13 @@ function BreadCrumb({ crumbs }: BreadCrumbProps) {
                 crumbs.map(({ label, href }, key) =>
                     <span key={key}>
                         {href ? <Link href={href}>
-                            <span className="underline mr-4 klein underline-offset-4">{label}</span>
+                            <a>
+                                <span className="underline mr-4 klein underline-offset-4">{label}</span>
+                            </a>
                         </Link>
                             : <span className="mr-4">{label}</span>
                         }
-                        {key !== crumbs.length - 1? <span className="mr-4">/</span> : null}
+                        {key !== crumbs.length - 1 ? <span className="mr-4">/</span> : null}
                     </span>
                 )
             }

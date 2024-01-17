@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import ContentWrapper from "components/ContentWrapper"
 
 function Home() {
 
@@ -228,25 +229,23 @@ function Home() {
 
 
 	return (
-		<>
-			<div className="subpixel-antialiased text-black bg-white max-w-max">
-				<div className="lg:pt-12 lg:px-12 sm:px-0 relative">
-					<div
-						className="border-l-2 border-stone-900 min-h-full"
-					>
-						<Header />
-						<Description />
-					</div>
-					{/* <SLAs /> */}
-
+		<div className="subpixel-antialiased text-black bg-white max-w-max">
+			<div className="lg:pt-12 lg:px-12 sm:px-0 relative">
+				<div
+					className="border-l-2 border-stone-900 min-h-full"
+				>
+					<Header />
+					<Description />
 				</div>
-				<RecentWork />
-				<Testimonials />
-				<SatisfiedCustomers />
-				<CTA />
-				<Footer />
-			</div >
-		</>
+				{/* <SLAs /> */}
+
+			</div>
+			<RecentWork />
+			<Testimonials />
+			<SatisfiedCustomers />
+			<CTA />
+			<Footer />
+		</div >
 	)
 }
 
