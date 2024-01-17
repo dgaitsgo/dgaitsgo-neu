@@ -4,8 +4,6 @@ import { serialize } from 'next-mdx-remote/serialize'
 import ArticleLayout from 'layouts/Blog/ArticleLayout'
 import articles from 'constants/articles'
 import articlesMap from 'constants/articlesMap'
-import IconButton from 'components/IconButton'
-import Link from 'next/link'
 
 interface PostProps {
 	source: string
