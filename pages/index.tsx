@@ -128,7 +128,7 @@ function Home() {
 					<div className="grid place-content-center left-full font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 -bottom-1/4  text-black border-2  border-stone-900 -translate-x-1/2 -translate-y-1/2 bg-white"
 					>&#8221;</div>
 				</div>
-				<div className="max-w-lg lg:mx-12 mx-6 pb-4 border-2 border-stone-900 relative mt-8 p-4 shadow-brut-md">
+				<div className="testimonial__right max-w-lg lg:mx-12 mx-6 pb-4 border-2 border-stone-900 relative mt-8 p-4 shadow-brut-md">
 					<span className="font-serif text-4xl pt-5 absolute rounded-full w-10 h-10 top-0  text-black border-2  border-stone-900 bg-white"
 						style={{
 							transform: `translate(-50%, -50%)`,

@@ -3,6 +3,9 @@ import { join } from 'path'
 import { serialize } from 'next-mdx-remote/serialize'
 import ArticleLayout from 'layouts/Blog/ArticleLayout'
 import articles from 'constants/articles'
+import articlesMap from 'constants/articlesMap'
+import IconButton from 'components/IconButton'
+import Link from 'next/link'
 
 interface PostProps {
 	source: string
@@ -12,10 +15,11 @@ interface PostProps {
 function Article({ source, slug }: PostProps) {
 
 	// @ts-ignore
-	const { title, date } = articles[slug]
+	const { title, date, tags } = articlesMap.get(slug)
 
 	return (
 		<ArticleLayout
+			tags={tags}
 			title={title}
 			date={date}
 			source={source}
@@ -31,13 +35,20 @@ export async function getStaticProps({ params }: { params: any }) {
 }
 
 export async function getStaticPaths() {
+
+	// @ts-ignore
+	const paths = articles.map((article) => {
+		return {
+			params: {
+				slug: article.id
+			}
+		}
+	})
+
 	return {
-		paths: [
-			{ params: { slug: 'recreate-that-graph-water-quality' } },
-			{ params: { slug: 'tiles-in-bbox-open-closed' } }
-		],
+		paths,
 		fallback: false
-	  }
+	}
 }
 
 export default Article
