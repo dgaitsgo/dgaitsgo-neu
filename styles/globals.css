@@ -2,9 +2,64 @@ html,
 body {
 	padding: 0;
 	margin: 0 !important;
-    display: contents !important;
+	display: contents !important;
+
 }
 
 * {
 	box-sizing: border-box;
+	/* outline: solid 1px red; */
+}
+
+.main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #002fa7;
+	height: 100vh;
+	width: 100vw;
+	padding-left: 8vw;
+	padding-top: 4vh;
+
+	.header {
+		color: white;
+		font-size: 8vw;
+		margin-bottom: 1vw;
+	}
+
+	.countdown {
+
+		display: flex;
+		gap: 6vw;
+
+		.cdg {
+			display: flex;
+			flex-direction: column;
+
+			.label {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1vw;
+				color: white;
+				opacity: 0.4;
+			}
+
+			.value {
+				text-transform: uppercase;
+				font-weight: normal;
+				font-size: 6vw;
+				color: white;
+			}
+		}
+	}
+
+	#email {
+		margin-top: 8vh;
+		display: inline-block;
+		background: #2266B5;
+		font-size: 1vw;
+		padding: 2vw;
+		color: white;
+	}
+
 }
