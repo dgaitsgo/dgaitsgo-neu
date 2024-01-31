@@ -1,0 +1,68 @@
+/* html,
+body {
+    padding: 0;
+    margin: 0 !important;
+    display: contents !important;
+
+}
+
+* {
+    box-sizing: border-box;
+} */
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #002fa7;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-left: 8vw; */
+    /* padding-top: 4vh; */
+
+    .header {
+        color: white;
+        font-size: 8vw;
+        margin-bottom: 1vw;
+    }
+
+    .countdown {
+
+        display: flex;
+        gap: 6vw;
+
+        .cdg {
+            display: flex;
+            flex-direction: column;
+
+            .label {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2vw;
+                color: white;
+                opacity: 0.4;
+            }
+
+            .value {
+                text-transform: uppercase;
+                font-weight: normal;
+                font-size: 6vw;
+                color: white;
+            }
+        }
+    }
+
+    #email {
+        margin-top: 8vh;
+        display: inline-block;
+        background: #2266B5;
+        font-size: 2.4vw;
+        padding: 2vw;
+        color: white;
+    }
+
+}

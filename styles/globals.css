@@ -8,7 +8,6 @@ body {
 
 * {
 	box-sizing: border-box;
-	/* outline: solid 1px red; */
 }
 
 .main {
@@ -18,8 +17,12 @@ body {
 	background: #002fa7;
 	height: 100vh;
 	width: 100vw;
-	padding-left: 8vw;
-	padding-top: 4vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* padding-left: 8vw; */
+	/* padding-top: 4vh; */
 
 	.header {
 		color: white;
@@ -39,7 +42,7 @@ body {
 			.label {
 				text-transform: uppercase;
 				font-weight: bold;
-				font-size: 1vw;
+				font-size: 2vw;
 				color: white;
 				opacity: 0.4;
 			}
@@ -57,7 +60,7 @@ body {
 		margin-top: 8vh;
 		display: inline-block;
 		background: #2266B5;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		padding: 2vw;
 		color: white;
 	}
