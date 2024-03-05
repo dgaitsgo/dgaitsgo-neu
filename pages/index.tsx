@@ -7,7 +7,7 @@ const googleFont = JetBrains_Mono({
 	subsets: ['latin'],
 })
 
-const countDownDate = new Date("Mar 1, 2024 16:20:25").getTime();
+const countDownDate = new Date("May 16, 2091 16:20:25").getTime();
 
 function getTimes() {
 	const now = new Date().getTime()
@@ -57,7 +57,8 @@ function _() {
 
 	return (
 		<div className={`${googleFont.className} main`}>
-			<h1 className="header">coming soon</h1>
+			<h1 className="header">Full-stack Developer</h1>
+			<h2 className="header">David Gaitsgory</h2>
 			<div className="countdown">
 				<p className="cdg">
 					<span className="label">days</span>
